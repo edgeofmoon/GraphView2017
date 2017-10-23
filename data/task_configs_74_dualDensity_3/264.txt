@@ -1,0 +1,19 @@
+[task_name]	task_variation
+[extr_info]	2	2	4
+[num_nodes]	74
+[hier_file]	data\NBS1.2\SchizophreniaExample\nodeHierarchy.txt
+[pos_file]	data\NBS1.2\SchizophreniaExample\COG2.txt
+[label_file]	data\NBS1.2\SchizophreniaExample\nodeLabels.txt
+[num_graph]	2
+[matrix_file]	data\NBS1.2\SchizophreniaExample\matrices\MeanSubject.txt
+[density]	0.05
+[geometry]	layout_treering
+[topology]	bundler_HEB
+[encoding]	9
+[represent]	representation_default
+[matrix_file]	data\NBS1.2\SchizophreniaExample\matrices\subject11.txt
+[density]	0.05
+[geometry]	layout_treering
+[topology]	bundler_HEB
+[encoding]	9
+[represent]	representation_default

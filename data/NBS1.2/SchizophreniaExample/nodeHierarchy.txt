@@ -1,0 +1,17 @@
+Brain
+Frontal_L
+2 5 7 9 11 13 19 21 25
+Parietal_L
+0 15 17 27 29 48 50 52 54 56 58 60 62 64 66 
+Tempareil_L
+23 31 33 46 68 70 72 
+Occipital_L
+34 36 38 40 42 44 
+Occipital_R
+45 43 41 39 37 35
+Tempareil_R
+73 71 69 47 32 24
+Parietal_R
+67 65 63 61 59 57 55 53 51 49 30 28 18 16 1
+Frontal_R
+26 22 20 14 12 10 8 6 4 3 

@@ -1,0 +1,83 @@
+4 @brain
+
+12 @Parietal
+48 Postcentral_L
+49 Postcentral_R
+50 Parietal_Sup_L
+51 Parietal_Sup_R
+52 Parietal_Inf_L
+53 Parietal_Inf_R
+54 SupraMarginal_L
+55 SupraMarginal_R
+56 Angular_L
+57 Angular_R
+58 Precuneus_L
+59 Precuneus_R
+
+29 @Frontal
+0Precentral_L
+1Precentral_R
+2Frontal_Sup_L
+3Frontal_Sup_R
+4Frontal_Sup_Orb_R
+5Frontal_Mid_L
+6Frontal_Mid_R
+7Frontal_Mid_Orb_L
+8Frontal_Mid_Orb_R
+9Frontal_Inf_Oper_L
+10Frontal_Inf_Oper_R
+11Frontal_Inf_Tri_L
+12Frontal_Inf_Tri_R
+13Frontal_Inf_Orb_L
+14Frontal_Inf_Orb_R
+15Rolandic_Oper_L
+16Rolandic_Oper_R
+17Supp_Motor_Area_L
+18Supp_Motor_Area_R
+19Frontal_Sup_Medial_L
+20Frontal_Sup_Medial_R
+21Frontal_Med_Orb_L
+22Frontal_Med_Orb_R
+25Cingulum_Ant_L
+26Cingulum_Ant_R
+27Cingulum_Mid_L
+28Cingulum_Mid_R
+29Cingulum_Post_L
+30Cingulum_Post_R
+
+14 @Occipital
+34Calcarine_L
+35Calcarine_R
+36Cuneus_L
+37Cuneus_R
+38Lingual_L
+39Lingual_R
+40Occipital_Sup_L
+41Occipital_Sup_R
+42Occipital_Mid_L
+43Occipital_Mid_R
+44Occipital_Inf_L
+45Occipital_Inf_R
+46Fusiform_L
+47Fusiform_R
+
+19 @Tempareil
+23Insula_L
+24Insula_R
+31Hippocampus_L
+32Hippocampus_R
+33Amygdala_L
+60Subcortical
+61Subcortical
+62Subcortical
+63Subcortical
+64Subcortical
+65Subcortical
+66Subcortical
+67Subcortical
+68Heschl_L
+69Heschl_R
+70Temporal_Sup_L
+71Temporal_Sup_R
+72Temporal_Mid_L
+73Temporal_Mid_R

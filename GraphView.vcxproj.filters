@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{d1b736c9-f445-4230-ba0c-68571412bb3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graph">
+      <UniqueIdentifier>{76c47a16-0fb2-444a-9d29-7fc110c4319a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{9f14e1cd-d344-4e3a-a71d-dc605c26e7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data">
+      <UniqueIdentifier>{303d3bca-4521-42e7-b6e1-abae43543060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{2c9c1f2d-396a-4d38-a8a7-5e3a03757639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\recycle">
+      <UniqueIdentifier>{7cd04aa8-42dc-4f4f-9b81-f06d35ec714d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\task">
+      <UniqueIdentifier>{998f5452-18fd-4ed7-aa43-079f27d6591d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{2dc34fb2-07f1-4cb4-bc36-484b0f6f5e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{87e74dbc-6f26-47ae-9ead-8769d946616e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graph">
+      <UniqueIdentifier>{6baf6d8d-fb84-4c48-9d3e-258e562fb6ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{5bc868c8-bec5-4027-a85f-2e0f343d7f0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{8a4b1d95-bd80-4dc5-b870-abc4179016b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\task">
+      <UniqueIdentifier>{3a15b3dc-4518-4554-9765-323b5d6b94b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data">
+      <UniqueIdentifier>{601a833e-7a88-45a1-9fa2-5760594a5259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="out">
+      <UniqueIdentifier>{7725b207-3d8c-4b86-828b-ae6f84454e81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="out\svd.c">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="out\myMesh.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceDirectedEdgeBundler.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="out\cdt.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="out\BSplineGA.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="MyBoundingBox.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericEvent.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericEventListener.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericEventInterpreter.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericKnot.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericLayout.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericLayoutSyncer.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericNode.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGenericSelectableDataAbstract.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphClusterEdgeBundler.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphDrawer.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphEdgeBundler.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphFilter.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphFruchtermanReingoldLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphGeometryEdgeBundler.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphHierarchicalLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphHierarchicalRepresentation.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphIterativeLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphKnot.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphLocalOptimizationLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphLodLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphLodRepresentation.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphMatrixLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphMatrixRepresentation.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphRadialLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphRepresentation.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyKnotContainer.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyKnot.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyKnotLayoutManager.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMathHelper.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPrimitiveDrawer.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLightingTool.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphChoiceTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDataLoader.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphMultiNodeTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphSingleNodeTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphSingleNodeDegreeCountTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphMultiNodeCommonNeighborCountTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMultiGraphNodeVariationTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphTaskInstance.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphTaskUI.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyView.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTrackBall.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyString.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MySimple2DGrid.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyScene.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRenderScene.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphTaskGenerator.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphNodeEdgeWeightTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphHubNodeTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphicsTool.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphAlgorithm.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyVisualElement.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyColorConverter.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphEncodingRepresentation.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQuarternion.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphMatrixEncodingRepresentation.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphHighestCommonNeighborTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="LabObject.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="LabCut.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="myColor3.cpp">
+      <Filter>out</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTextureHelper.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphClusterVariationTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphProjectionLayout.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphSelectionMask.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTimer.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MySelectionEvent.cpp">
+      <Filter>Source Files\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphClusterVariationComparetask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphClusterNodeTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphOppositeHubTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphInterClusterConnectionTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphActiveClusterTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMultiView.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTextObject.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTextObjectGroup.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="My2DCellFillingAlgorithm.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAntiAliasingView.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitmap.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="StatisticsIO.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="gammaTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="dataTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="testTaskTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="testTaskGen.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskAnswerTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DataGen.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="taskGen.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="taskTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="LogExpand.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="taskOrderTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyMatrix.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphicsTool.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyColor4.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphKnot.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericNode.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyKnotLayoutManager.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericKnot.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyKnot.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyKnotContainer.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphDrawer.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScene.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyView.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericEventListener.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericEvent.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericEventInterpreter.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDataLoader.h">
+      <Filter>Header Files\data</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVec.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphMatrixLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphRepresentation.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphMatrixRepresentation.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScale.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphFruchtermanReingoldLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericGraph.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDenseGraph.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphFilter.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMathHelper.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphIterativeLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphLocalOptimizationLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="My1DSampler.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericHierarchyOverlay.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphHierarchicalLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUtility.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBoundingBox.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTrackBall.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericLayout.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLightingTool.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRenderScene.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphHierarchicalRepresentation.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyArray.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericLayoutSyncer.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericSelectableDataAbstract.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphEdgeNodeList.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericGraphComponent.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLine.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPrimitiveDrawer.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphLodLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphLodRepresentation.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphEdgeBundler.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyString.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphClusterEdgeBundler.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPolyLine.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="out\myMesh.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\myMacro.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\geom2d.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\cdt.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceDirectedEdgeBundler.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphGeometryEdgeBundler.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphRadialLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MySimple2DGrid.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphChoiceTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGenericWeightedGraph.h">
+      <Filter>Header Files\recycle</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\rapidxml.hpp">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\rapidxml_iterators.hpp">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\rapidxml_print.hpp">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\rapidxml_utils.hpp">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\BSplineGA.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\cgMath.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\MathCommon.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\svd.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="out\Vector.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphMultiNodeTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphSingleNodeTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphSingleNodeDegreeCountTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphMultiNodeCommonNeighborCountTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMultiGraphNodeVariationTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphTaskInstance.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphTaskUI.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphTaskGenerator.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphNodeEdgeWeightTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphHubNodeTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphAlgorithm.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVisualElement.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyColorConverter.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphEncodingRepresentation.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyQuarternion.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTextureHelper.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphMatrixEncodingRepresentation.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphHighestCommonNeighborTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="LabObject.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3D.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="LabCut.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="myColor3.h">
+      <Filter>out</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphClusterVariationTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphProjectionLayout.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphSelectionMask.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTimer.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="VisConfig.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MySelectionEvent.h">
+      <Filter>Header Files\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphClusterVariationComparetask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphClusterNodeTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphOppositeHubTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphInterClusterConnectionTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphActiveClusterTask.h">
+      <Filter>Header Files\task</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMultiView.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTextObject.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTextObjectGroup.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="My2DCellFillingAlgorithm.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBox.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAntiAliasingView.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GraphView.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

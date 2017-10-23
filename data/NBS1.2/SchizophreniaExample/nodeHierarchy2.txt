@@ -1,0 +1,33 @@
+Brain
+Motor
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+Language
+15 16 54 55 56 57
+Sup-motor
+17 18 19 20 21 22
+Emotion
+23 24 25 26
+Pre-motor
+27 28
+Cognitive
+29 30 
+Memory
+31 32
+Olfactory
+33
+Visual_cortex
+34 35 36 37 40 41 42 43 44 45
+Vision
+38 39
+Visual_and_Motion
+46 47
+Touch
+48 49
+Sensation_and_Perception
+50
+Integrating_Sensory
+51 52 53
+Executive_Functions
+58 59 60 61 62 63 64 65 66 67
+Auditory
+68 69 70 71 72 73

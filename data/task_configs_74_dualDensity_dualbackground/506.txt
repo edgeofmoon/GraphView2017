@@ -1,0 +1,15 @@
+[task_name]	task_opposite_hub
+[extr_info]	39
+[num_nodes]	74
+[hier_file]	data\NBS1.2\SchizophreniaExample\nodeHierarchy.txt
+[pos_file]	data\NBS1.2\SchizophreniaExample\COG2.txt
+[label_file]	data\NBS1.2\SchizophreniaExample\nodeLabels.txt
+[num_graph]	1
+[matrix_file]	data\NBS1.2\SchizophreniaExample\matrices\subject06.txt
+[density]	0.05
+[geometry]	layout_default
+[topology]	bundler_GEB
+[encoding]	4
+[represent]	representation_default
+[difficulty]	0
+[background]	0

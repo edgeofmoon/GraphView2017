@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FAEADF83-FC34-4A87-96A9-BBA71CBCF6A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GraphView</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <SourcePath>./out;$(SourcePath)</SourcePath>
+    <IncludePath>./out;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <SourcePath>./out;$(SourcePath)</SourcePath>
+    <IncludePath>./out;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./out;$(IncludePath)</IncludePath>
+    <SourcePath>./out;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./out;$(IncludePath)</IncludePath>
+    <SourcePath>./out;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./out;./gl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./gl</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./out;./gl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./gl</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib; glut32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies> freeglut.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;glut32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bitmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DataGen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="dataTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ForceDirectedEdgeBundler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="gammaTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LabCut.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="LabObject.cpp" />
+    <ClCompile Include="LogExpand.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="My2DCellFillingAlgorithm.cpp" />
+    <ClCompile Include="MyAntiAliasingView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MyBoundingBox.cpp" />
+    <ClCompile Include="myColor3.cpp" />
+    <ClCompile Include="MyColorConverter.cpp" />
+    <ClCompile Include="MyDataLoader.cpp" />
+    <ClCompile Include="MyGenericSelectableDataAbstract.cpp" />
+    <ClCompile Include="MyGenericEvent.cpp" />
+    <ClCompile Include="MyGenericEventInterpreter.cpp" />
+    <ClCompile Include="MyGenericEventListener.cpp" />
+    <ClCompile Include="MyGenericLayout.cpp" />
+    <ClCompile Include="MyGenericLayoutSyncer.cpp" />
+    <ClCompile Include="MyGenericNode.cpp" />
+    <ClCompile Include="MyGenericKnot.cpp" />
+    <ClCompile Include="MyGraphActiveClusterTask.cpp" />
+    <ClCompile Include="MyGraphAlgorithm.cpp" />
+    <ClCompile Include="MyGraphClusterEdgeBundler.cpp" />
+    <ClCompile Include="MyGraphClusterNodeTask.cpp" />
+    <ClCompile Include="MyGraphClusterVariationComparetask.cpp" />
+    <ClCompile Include="MyGraphClusterVariationTask.cpp" />
+    <ClCompile Include="MyGraphDrawer.cpp" />
+    <ClCompile Include="MyGraphEdgeBundler.cpp" />
+    <ClCompile Include="MyGraphEncodingRepresentation.cpp" />
+    <ClCompile Include="MyGraphFilter.cpp" />
+    <ClCompile Include="MyGraphFruchtermanReingoldLayout.cpp" />
+    <ClCompile Include="MyGraphGeometryEdgeBundler.cpp" />
+    <ClCompile Include="MyGraphHierarchicalLayout.cpp" />
+    <ClCompile Include="MyGraphHierarchicalRepresentation.cpp" />
+    <ClCompile Include="MyGraphHighestCommonNeighborTask.cpp" />
+    <ClCompile Include="MyGraphHubNodeTask.cpp" />
+    <ClCompile Include="MyGraphicsTool.cpp" />
+    <ClCompile Include="MyGraphInterClusterConnectionTask.cpp" />
+    <ClCompile Include="MyGraphIterativeLayout.cpp" />
+    <ClCompile Include="MyGraphKnot.cpp" />
+    <ClCompile Include="MyGraphLayout.cpp" />
+    <ClCompile Include="MyGraphLocalOptimizationLayout.cpp" />
+    <ClCompile Include="MyGraphLodLayout.cpp" />
+    <ClCompile Include="MyGraphLodRepresentation.cpp" />
+    <ClCompile Include="MyGraphMatrixEncodingRepresentation.cpp" />
+    <ClCompile Include="MyGraphMatrixRepresentation.cpp" />
+    <ClCompile Include="MyGraphMultiNodeCommonNeighborCountTask.cpp" />
+    <ClCompile Include="MyGraphMultiNodeTask.cpp" />
+    <ClCompile Include="MyGraphNodeEdgeWeightTask.cpp" />
+    <ClCompile Include="MyGraphOppositeHubTask.cpp" />
+    <ClCompile Include="MyGraphProjectionLayout.cpp" />
+    <ClCompile Include="MyGraphSelectionMask.cpp" />
+    <ClCompile Include="MyGraphSingleNodeDegreeCountTask.cpp" />
+    <ClCompile Include="MyGraphSingleNodeTask.cpp" />
+    <ClCompile Include="MyGraphRadialLayout.cpp" />
+    <ClCompile Include="MyGraphRepresentation.cpp" />
+    <ClCompile Include="MyGraphChoiceTask.cpp" />
+    <ClCompile Include="MyGraphTaskGenerator.cpp" />
+    <ClCompile Include="MyGraphTaskInstance.cpp" />
+    <ClCompile Include="MyGraphTaskUI.cpp" />
+    <ClCompile Include="MyKnot.cpp" />
+    <ClCompile Include="MyKnotContainer.cpp" />
+    <ClCompile Include="MyKnotLayoutManager.cpp" />
+    <ClCompile Include="MyGraphMatrixLayout.cpp" />
+    <ClCompile Include="MyLightingTool.cpp" />
+    <ClCompile Include="MyMathHelper.cpp" />
+    <ClCompile Include="MyMultiGraphNodeVariationTask.cpp" />
+    <ClCompile Include="MyMultiView.cpp" />
+    <ClCompile Include="MyPrimitiveDrawer.cpp" />
+    <ClCompile Include="MyQuarternion.cpp" />
+    <ClCompile Include="MyRenderScene.cpp" />
+    <ClCompile Include="MyScene.cpp" />
+    <ClCompile Include="MySelectionEvent.cpp" />
+    <ClCompile Include="MySimple2DGrid.cpp" />
+    <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="MyTextObject.cpp" />
+    <ClCompile Include="MyTextObjectGroup.cpp" />
+    <ClCompile Include="MyTextureHelper.cpp" />
+    <ClCompile Include="MyTimer.cpp" />
+    <ClCompile Include="MyTrackBall.cpp" />
+    <ClCompile Include="MyView.cpp" />
+    <ClCompile Include="MyVisualElement.cpp" />
+    <ClCompile Include="out\BSplineGA.cpp" />
+    <ClCompile Include="out\cdt.cpp" />
+    <ClCompile Include="out\myMesh.cpp" />
+    <ClCompile Include="out\svd.c" />
+    <ClCompile Include="StatisticsIO.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TaskAnswerTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="taskGen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="taskOrderTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="taskTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="testTaskGen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="testTaskTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ForceDirectedEdgeBundler.h" />
+    <ClInclude Include="Lab3D.h" />
+    <ClInclude Include="LabCut.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="LabObject.h" />
+    <ClInclude Include="My2DCellFillingAlgorithm.h" />
+    <ClInclude Include="MyAntiAliasingView.h" />
+    <ClInclude Include="MyArray.h" />
+    <ClInclude Include="MyBoundingBox.h" />
+    <ClInclude Include="MyBox.h" />
+    <ClInclude Include="myColor3.h" />
+    <ClInclude Include="MyColor4.h" />
+    <ClInclude Include="MyColorConverter.h" />
+    <ClInclude Include="MyDataLoader.h" />
+    <ClInclude Include="MyGenericGraphComponent.h" />
+    <ClInclude Include="MyGenericSelectableDataAbstract.h" />
+    <ClInclude Include="MyGenericEvent.h" />
+    <ClInclude Include="MyGenericEventInterpreter.h" />
+    <ClInclude Include="MyGenericEventListener.h" />
+    <ClInclude Include="MyGenericGraph.h" />
+    <ClInclude Include="MyGenericHierarchyOverlay.h" />
+    <ClInclude Include="MyGenericLayout.h" />
+    <ClInclude Include="MyGenericLayoutSyncer.h" />
+    <ClInclude Include="MyGenericNode.h" />
+    <ClInclude Include="MyGenericKnot.h" />
+    <ClInclude Include="MyDenseGraph.h" />
+    <ClInclude Include="MyGenericWeightedGraph.h" />
+    <ClInclude Include="MyGraphActiveClusterTask.h" />
+    <ClInclude Include="MyGraphAlgorithm.h" />
+    <ClInclude Include="MyGraphClusterEdgeBundler.h" />
+    <ClInclude Include="MyGraphClusterNodeTask.h" />
+    <ClInclude Include="MyGraphClusterVariationComparetask.h" />
+    <ClInclude Include="MyGraphClusterVariationTask.h" />
+    <ClInclude Include="MyGraphDrawer.h" />
+    <ClInclude Include="MyGraphEdgeBundler.h" />
+    <ClInclude Include="MyGraphEdgeNodeList.h" />
+    <ClInclude Include="MyGraphEncodingRepresentation.h" />
+    <ClInclude Include="MyGraphFilter.h" />
+    <ClInclude Include="MyGraphFruchtermanReingoldLayout.h" />
+    <ClInclude Include="MyGraphGeometryEdgeBundler.h" />
+    <ClInclude Include="MyGraphHierarchicalLayout.h" />
+    <ClInclude Include="MyGraphHierarchicalRepresentation.h" />
+    <ClInclude Include="MyGraphHighestCommonNeighborTask.h" />
+    <ClInclude Include="MyGraphHubNodeTask.h" />
+    <ClInclude Include="MyGraphicsTool.h" />
+    <ClInclude Include="MyGraphInterClusterConnectionTask.h" />
+    <ClInclude Include="MyGraphIterativeLayout.h" />
+    <ClInclude Include="MyGraphKnot.h" />
+    <ClInclude Include="MyGraphLayout.h" />
+    <ClInclude Include="MyGraphLocalOptimizationLayout.h" />
+    <ClInclude Include="MyGraphLodLayout.h" />
+    <ClInclude Include="MyGraphLodRepresentation.h" />
+    <ClInclude Include="MyGraphMatrixEncodingRepresentation.h" />
+    <ClInclude Include="MyGraphMatrixRepresentation.h" />
+    <ClInclude Include="MyGraphMultiNodeCommonNeighborCountTask.h" />
+    <ClInclude Include="MyGraphMultiNodeTask.h" />
+    <ClInclude Include="MyGraphNodeEdgeWeightTask.h" />
+    <ClInclude Include="MyGraphOppositeHubTask.h" />
+    <ClInclude Include="MyGraphProjectionLayout.h" />
+    <ClInclude Include="MyGraphSelectionMask.h" />
+    <ClInclude Include="MyGraphSingleNodeDegreeCountTask.h" />
+    <ClInclude Include="MyGraphSingleNodeTask.h" />
+    <ClInclude Include="MyGraphRadialLayout.h" />
+    <ClInclude Include="MyGraphRepresentation.h" />
+    <ClInclude Include="MyGraphChoiceTask.h" />
+    <ClInclude Include="MyGraphTaskGenerator.h" />
+    <ClInclude Include="MyGraphTaskInstance.h" />
+    <ClInclude Include="MyGraphTaskUI.h" />
+    <ClInclude Include="MyKnot.h" />
+    <ClInclude Include="MyKnotContainer.h" />
+    <ClInclude Include="MyKnotLayoutManager.h" />
+    <ClInclude Include="MyLightingTool.h" />
+    <ClInclude Include="MyLine.h" />
+    <ClInclude Include="MyMathHelper.h" />
+    <ClInclude Include="MyMatrix.h" />
+    <ClInclude Include="MyGraphMatrixLayout.h" />
+    <ClInclude Include="MyMultiGraphNodeVariationTask.h" />
+    <ClInclude Include="MyMultiView.h" />
+    <ClInclude Include="MyPolyLine.h" />
+    <ClInclude Include="MyPrimitiveDrawer.h" />
+    <ClInclude Include="My1DSampler.h" />
+    <ClInclude Include="MyQuarternion.h" />
+    <ClInclude Include="MyRenderScene.h" />
+    <ClInclude Include="MyScale.h" />
+    <ClInclude Include="MyScene.h" />
+    <ClInclude Include="MySelectionEvent.h" />
+    <ClInclude Include="MySimple2DGrid.h" />
+    <ClInclude Include="MyString.h" />
+    <ClInclude Include="MyTextObject.h" />
+    <ClInclude Include="MyTextObjectGroup.h" />
+    <ClInclude Include="MyTextureHelper.h" />
+    <ClInclude Include="MyTimer.h" />
+    <ClInclude Include="MyTrackBall.h" />
+    <ClInclude Include="MyUtility.h" />
+    <ClInclude Include="MyVec.h" />
+    <ClInclude Include="MyView.h" />
+    <ClInclude Include="MyVisualElement.h" />
+    <ClInclude Include="out\BSplineGA.h" />
+    <ClInclude Include="out\cdt.h" />
+    <ClInclude Include="out\cgMath.h" />
+    <ClInclude Include="out\geom2d.h" />
+    <ClInclude Include="out\MathCommon.h" />
+    <ClInclude Include="out\myMacro.h" />
+    <ClInclude Include="out\myMesh.h" />
+    <ClInclude Include="out\rapidxml.hpp" />
+    <ClInclude Include="out\rapidxml_iterators.hpp" />
+    <ClInclude Include="out\rapidxml_print.hpp" />
+    <ClInclude Include="out\rapidxml_utils.hpp" />
+    <ClInclude Include="out\svd.h" />
+    <ClInclude Include="out\Vector.h" />
+    <ClInclude Include="VisConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GraphView.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
