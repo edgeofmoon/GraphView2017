@@ -29,6 +29,13 @@
     <Filter Include="Test">
       <UniqueIdentifier>{2dc34fb2-07f1-4cb4-bc36-484b0f6f5e9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="out">
+      <UniqueIdentifier>{7725b207-3d8c-4b86-828b-ae6f84454e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -50,13 +57,6 @@
     </Filter>
     <Filter Include="Source Files\data">
       <UniqueIdentifier>{601a833e-7a88-45a1-9fa2-5760594a5259}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="out">
-      <UniqueIdentifier>{7725b207-3d8c-4b86-828b-ae6f84454e81}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -691,5 +691,8 @@
     <ResourceCompile Include="GraphView.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
   </ItemGroup>
 </Project>

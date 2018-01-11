@@ -9,6 +9,8 @@
 #include "MySelectionEvent.h"
 #include "VisConfig.h"
 
+// exp 1 four tasks are in TASKSET 1
+// exp 2 two tasks are in TASKSET 2
 #define TASKSET 1
 
 typedef MySelectionEvent MyEvent;
@@ -169,7 +171,10 @@ void KeyReleaseFunc(unsigned char c, int x, int y){
 }
 void KeyPressFunc(unsigned char c, int x, int y){
 	if (c == 27){
-		//exit(0);
+		exit(0);
+	}
+	else if (c == 'n' || c == 'N'){
+		NextTask();
 	}
 	MyEvent eve = MyEvent::GenerateKeyboardKeyEvent(c, MyEvent::KEY_DOWN, x, y);
 	task->EventHandler(eve);
