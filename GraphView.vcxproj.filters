@@ -351,7 +351,7 @@
     <ClCompile Include="taskOrderTest.cpp">
       <Filter>Test</Filter>
     </ClCompile>
-    <ClCompile Include="..\fMRI_Program\taskTest_fMRI.cpp">
+    <ClCompile Include="taskTest_fMRI.cpp">
       <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
@@ -694,5 +694,8 @@
     <ResourceCompile Include="GraphView.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
