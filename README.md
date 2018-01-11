@@ -28,7 +28,7 @@ The program data is of the same structure as that of the fMRI network study. The
 Controls:
 Esc: quit
 n or N key: next trial
-You can change the variable "blinkTime" in taskTest.cpp or taskTest_fMRI.cpp to modify the crosshair blinking time (in seconds). This is useful to quikly navigate the views by setting it to 0.
+You can change the variable "blinkTime" in taskTest.cpp or taskTest_fMRI.cpp to modify the crosshair blinking time (in seconds). This is useful to quickly navigate the views by setting it to 0.
 
 Build:
 All the *.cpp files with main functions are used for test purposes. Therefore, only one of those files should be included in your project to compile the corresponding executable.
